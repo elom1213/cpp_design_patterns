@@ -1,0 +1,41 @@
+cout << ele1.str() << "\n\n";
+<ol>
+  <li>
+    ele1 is auto type
+  </li>
+  <li>
+    made by chain
+  </li>
+</ol>
+
+cout << ele2.str() << "\n\n";
+<ul>
+  <li>
+    invoke conversion funtion
+  </li>
+  <li>
+    didn't call build()
+  </li>
+</ul>
+
+cout << ele3.str() << "\n\n";
+<ul>
+  <li>
+    use build() method explicitly
+  </li>
+  <li>
+    this can be inserted into other elements
+  </li>
+</ul>
+
+cout << ele4.str() << "\n\n";
+<html>
+  <ul>
+    <li>
+      use build() method explicitly
+    </li>
+    <li>
+      this can be inserted into other elements
+    </li>
+  </ul>
+</html>

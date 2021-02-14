@@ -1,0 +1,19 @@
+cout << mymenu << endl;
+  you ordered sweet chicken
+  It filled with chicken, tomato
+  And you choose sweet sauce
+
+cout << friendmenu << endl;
+  you ordered sweet chicken
+  It filled with chicken, tomato
+  And you choose sweet sauce
+
+cout << *classicHam << endl;
+  you ordered classicHam
+  It filled with Ham, cheese
+  And you choose honey mustard
+
+cout << *steakAndCheese;
+  you ordered steakAndCheese
+  It filled with beef, tuna
+  And you choose sweet chilli sauce
