@@ -45,9 +45,9 @@ class TrafficAdministration : public Observer<Person>
         cout << "[TrafficAdministration] you are not old enough to drive kid\n";
       else 
       {
-        // if you call unsubscribe while in notify, traceback of stack would look like
-        // notify --> field_changed --> unsubscribe
-        // both notify and unsubscribe tries to lock and that triggers deadlock
+        // if you call unsubscribe() while in notify, backtrace of stack would look like
+        // notify() --> field_changed() --> unsubscribe()
+        // both notify() and unsubscribe() tries to lock and that triggers deadlock!
         cout << "[TrafficAdministration] Ok. you can drive now\n";
         source.unsubscribe(*this);
       }

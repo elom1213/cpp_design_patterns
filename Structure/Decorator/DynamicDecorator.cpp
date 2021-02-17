@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/**
+ * Dynamic composition allows you to compose something at runntime, by passing around reference.
+ * It allows flexibility since the composition can happens at runntime in response to
+ * the user's input
+*/
+
 struct Shape
 {
   virtual string str() const = 0;
@@ -60,8 +66,8 @@ struct TransparentShape : Shape
   string str() const override
   {
     ostringstream oss;
-    oss << shape.str() << " has " << 
-    static_cast<float>(transparency) / 255.f *100.f << "% of transparency";
+    oss << shape.str() << " has " 
+        << static_cast<float>(transparency) / 255.f *100.f << "% of transparency";
     return oss.str();
   }
 };

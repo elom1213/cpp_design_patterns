@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/**
+ * functional decorator can wrap either blocks of code or particular funtions 
+ * to allow composition of behavior
+*/
+
 // Logger1
 struct Logger1
 {
@@ -75,8 +80,6 @@ auto make_logger3(R (*fun)(Args...), const string& name)
 int add(int x, int y);
 
 int main() {
-  // functional decorator can wrap either blocks of code or particular funtions
-  // to allow composition of behavior
   Logger1([](){ cout << "Hellow" << endl;}, "HelloFunction")();
 
   auto logger2 =

@@ -4,6 +4,13 @@
 
 using namespace std;
 
+/**
+ * Static composition implies that the object and its enhancements
+ * are composed at complie time via the use of templates.
+ * The exact set of enhancements on an object needs to be known
+ * at the moment of compilation
+*/
+
 struct Person
 {
   virtual string greet() = 0;
@@ -80,7 +87,7 @@ int main()
   RichMan<HandsomeMan<Man>> person{ 1000 , "Handsome", "David"};
   cout << person.greet() << '\n';
   // chage_name isn't part of Person's interface
-  // but your can call it since type deduced to Man in compile time
+  // but your can call it since the base type deduced to Man in compile time
   person.change_name("John");
   cout << person.greet();
   return 0;

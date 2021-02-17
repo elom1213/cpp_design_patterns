@@ -20,6 +20,10 @@ public:
   }
   void unsubscribe(Observer<T>& ob)
   {
+    //  vector is not thread-safe!
+    // if you call subscribe() and unsubscribe() at the same time
+    // it could lead to unintended consequence
+    // since both functions modify the vector
     observers.erase(remove(observers.begin(), observers.end(), &ob), 
                     observers.end());
   }
