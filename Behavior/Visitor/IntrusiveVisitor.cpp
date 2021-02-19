@@ -6,8 +6,11 @@ using namespace std;
 /**
  * hierarchy of mathematical operations.
  * we would like to add print() 
- * in intrusive way, we'll break opern_closed principle
+ * in intrusive way, we'll add a virtual method print() 
+ * to every single object in the hierarchy
+ * it'll break opern_closed principle
 */
+
 struct Expression
 {
   virtual ~Expression()=default;

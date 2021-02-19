@@ -5,9 +5,10 @@
 using namespace std;
 
 /**
- * Dynamic composition allows you to compose something at runntime, by passing around reference.
- * It allows flexibility since the composition can happens at runntime in response to
- * the user's input
+ * Dynamic composition allows you to compose something 
+ * at runntime, by passing around reference.
+ * It allows flexibility since the composition can happens 
+ * at runntime in response to the user's input
 */
 
 struct Shape
