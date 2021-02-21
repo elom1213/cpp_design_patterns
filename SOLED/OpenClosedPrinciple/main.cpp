@@ -29,10 +29,6 @@ struct Filter{
    Menu by_size(Menu, Size){ ... }
    Menu by_color_and_size(Menu, Color, Size){ ... }
 };
-
-
-
-
 */
 
 int main() {
